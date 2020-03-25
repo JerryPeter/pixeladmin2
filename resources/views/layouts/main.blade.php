@@ -13,35 +13,35 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- DEMO ONLY: Function for the proper stylesheet loading according to the demo settings -->
-  <script>function _pxDemo_loadStylesheet(a,b,c){var c=c||decodeURIComponent((new RegExp(";\\s*"+encodeURIComponent("px-demo-theme")+"\\s*=\\s*([^;]+)\\s*;","g").exec(";"+document.cookie+";")||[])[1]||"clean"),d="rtl"===document.getElementsByTagName("html")[0].getAttribute("dir");document.write(a.replace(/^(.*?)((?:\.min)?\.css)$/,'<link href="$1'+(c.indexOf("dark")!==-1&&a.indexOf("/css/")!==-1&&a.indexOf("/themes/")===-1?"-dark":"")+(!d||0!==a.indexOf("assets/css")&&0!==a.indexOf("assets/demo")?"":".rtl")+'$2" rel="stylesheet" type="text/css"'+(b?'class="'+b+'"':"")+">"))}</script>
+  <script>function _pxDemo_loadStylesheet(a,b,c){var c=c||decodeURIComponent((new RegExp(";\\s*"+encodeURIComponent("px-demo-theme")+"\\s*=\\s*([^;]+)\\s*;","g").exec(";"+document.cookie+";")||[])[1]||"clean"),d="rtl"===document.getElementsByTagName("html")[0].getAttribute("dir");document.write(a.replace(/^(.*?)((?:\.min)?\.css)$/,'<link href="$1'+(c.indexOf("dark")!==-1&&a.indexOf("/css/")!==-1&&a.indexOf("/themes/")===-1?"-dark":"")+(!d||0!==a.indexOf("public/assets/css")&&0!==a.indexOf("public/assets/demo")?"":".rtl")+'$2" rel="stylesheet" type="text/css"'+(b?'class="'+b+'"':"")+">"))}</script>
 
   <!-- DEMO ONLY: Set RTL direction -->
   <script>"ltr"!==document.getElementsByTagName("html")[0].getAttribute("dir")&&"1"===decodeURIComponent((new RegExp(";\\s*"+encodeURIComponent("px-demo-rtl")+"\\s*=\\s*([^;]+)\\s*;","g").exec(";"+document.cookie+";")||[])[1]||"0")&&document.getElementsByTagName("html")[0].setAttribute("dir","rtl");</script>
 
   <!-- DEMO ONLY: Load PixelAdmin core stylesheets -->
   <script>
-    _pxDemo_loadStylesheet("{{ url('assets/css/bootstrap.min.css') }}", 'px-demo-stylesheet-bs');
-    _pxDemo_loadStylesheet("{{ url('assets/css/pixeladmin.min.css') }}", 'px-demo-stylesheet-core');
-    _pxDemo_loadStylesheet("{{ url('assets/css/widgets.min.css') }}", 'px-demo-stylesheet-widgets');
+    _pxDemo_loadStylesheet("{{ url('public/assets/css/bootstrap.min.css') }}", 'px-demo-stylesheet-bs');
+    _pxDemo_loadStylesheet("{{ url('public/assets/css/pixeladmin.min.css') }}", 'px-demo-stylesheet-core');
+    _pxDemo_loadStylesheet("{{ url('public/assets/css/widgets.min.css') }}", 'px-demo-stylesheet-widgets');
   </script>
 
   <!-- DEMO ONLY: Load theme -->
   <script>
     function _pxDemo_loadTheme(a){var b=decodeURIComponent((new RegExp(";\\s*"+encodeURIComponent("px-demo-theme")+"\\s*=\\s*([^;]+)\\s*;","g").exec(";"+document.cookie+";")||[])[1]||"clean");_pxDemo_loadStylesheet(a+b+".min.css","px-demo-stylesheet-theme",b)}
-    _pxDemo_loadTheme('assets/css/themes/');
+    _pxDemo_loadTheme('public/assets/css/themes/');
   </script>
 
   <!-- Demo assets -->
-  <script>_pxDemo_loadStylesheet('assets/demo/demo.css');</script>
+  <script>_pxDemo_loadStylesheet('public/assets/demo/demo.css');</script>
   <!-- / Demo assets -->
 
   <!-- holder.js -->
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/holder/2.9.0/holder.js"></script>
 
   <!-- Pace.js -->
-  <script src="{{ url('assets/pace/pace.min.js') }}"></script>
+  <script src="{{ url('public/assets/pace/pace.min.js') }}"></script>
 
-  <script src="{{ url('assets/demo/demo.js') }}"></script>
+  <script src="{{ url('public/assets/demo/demo.js') }}"></script>
 </head>
 <body>
   <nav class="px-nav px-nav-left">
@@ -54,7 +54,7 @@
     <ul class="px-nav-content">
       <li class="px-nav-box p-a-3 b-b-1" id="demo-px-nav-box">
         <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <img src="{{ url('assets/demo/avatars/1.jpg') }}" alt="" class="pull-xs-left m-r-2 border-round" style="width: 54px; height: 54px;">
+        <img src="{{ url('public/assets/demo/avatars/1.jpg') }}" alt="" class="pull-xs-left m-r-2 border-round" style="width: 54px; height: 54px;">
         <div class="font-size-16"><span class="font-weight-light">Welcome, </span><strong>John</strong></div>
         <div class="btn-group" style="margin-top: 4px;">
           <a href="#" class="btn btn-xs btn-primary btn-outline"><i class="fa fa-envelope"></i></a>
@@ -346,56 +346,56 @@
           <div class="dropdown-menu p-a-0" style="width: 300px;">
             <div id="navbar-messages" style="height: 280px; position: relative;">
               <div class="widget-messages-alt-item">
-                <img src="{{ url('assets/demo/avatars/2.jpg') }}" alt="" class="widget-messages-alt-avatar">
+                <img src="{{ url('public/assets/demo/avatars/2.jpg') }}" alt="" class="widget-messages-alt-avatar">
                 <a href="#" class="widget-messages-alt-subject text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
                 <div class="widget-messages-alt-description">from <a href="#">Robert Jang</a></div>
                 <div class="widget-messages-alt-date">2h ago</div>
               </div>
 
               <div class="widget-messages-alt-item">
-                <img src="{{ url('assets/demo/avatars/3.jpg') }}" alt="" class="widget-messages-alt-avatar">
+                <img src="{{ url('public/assets/demo/avatars/3.jpg') }}" alt="" class="widget-messages-alt-avatar">
                 <a href="#" class="widget-messages-alt-subject text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
                 <div class="widget-messages-alt-description">from <a href="#">Michelle Bortz</a></div>
                 <div class="widget-messages-alt-date">2h ago</div>
               </div>
 
               <div class="widget-messages-alt-item">
-                <img src="{{ url('assets/demo/avatars/4.jpg') }}" alt="" class="widget-messages-alt-avatar">
+                <img src="{{ url('public/assets/demo/avatars/4.jpg') }}" alt="" class="widget-messages-alt-avatar">
                 <a href="#" class="widget-messages-alt-subject text-truncate">Lorem ipsum dolor sit amet.</a>
                 <div class="widget-messages-alt-description">from <a href="#">Timothy Owens</a></div>
                 <div class="widget-messages-alt-date">2h ago</div>
               </div>
 
               <div class="widget-messages-alt-item">
-                <img src="{{ url('assets/demo/avatars/5.jpg') }}" alt="" class="widget-messages-alt-avatar">
+                <img src="{{ url('public/assets/demo/avatars/5.jpg') }}" alt="" class="widget-messages-alt-avatar">
                 <a href="#" class="widget-messages-alt-subject text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
                 <div class="widget-messages-alt-description">from <a href="#">Denise Steiner</a></div>
                 <div class="widget-messages-alt-date">2h ago</div>
               </div>
 
               <div class="widget-messages-alt-item">
-                <img src="{{ url('assets/demo/avatars/2.jpg') }}" alt="" class="widget-messages-alt-avatar">
+                <img src="{{ url('public/assets/demo/avatars/2.jpg') }}" alt="" class="widget-messages-alt-avatar">
                 <a href="#" class="widget-messages-alt-subject text-truncate">Lorem ipsum dolor sit amet.</a>
                 <div class="widget-messages-alt-description">from <a href="#">Robert Jang</a></div>
                 <div class="widget-messages-alt-date">2h ago</div>
               </div>
 
               <div class="widget-messages-alt-item">
-                <img src="{{ url('assets/demo/avatars/3.jpg') }}" alt="" class="widget-messages-alt-avatar">
+                <img src="{{ url('public/assets/demo/avatars/3.jpg') }}" alt="" class="widget-messages-alt-avatar">
                 <a href="#" class="widget-messages-alt-subject text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
                 <div class="widget-messages-alt-description">from <a href="#">Michelle Bortz</a></div>
                 <div class="widget-messages-alt-date">2h ago</div>
               </div>
 
               <div class="widget-messages-alt-item">
-                <img src="{{ url('assets/demo/avatars/4.jpg') }}" alt="" class="widget-messages-alt-avatar">
+                <img src="{{ url('public/assets/demo/avatars/4.jpg') }}" alt="" class="widget-messages-alt-avatar">
                 <a href="#" class="widget-messages-alt-subject text-truncate">Lorem ipsum dolor sit amet.</a>
                 <div class="widget-messages-alt-description">from <a href="#">Timothy Owens</a></div>
                 <div class="widget-messages-alt-date">2h ago</div>
               </div>
 
               <div class="widget-messages-alt-item">
-                <img src="{{ url('assets/demo/avatars/5.jpg') }}" alt="" class="widget-messages-alt-avatar">
+                <img src="{{ url('public/assets/demo/avatars/5.jpg') }}" alt="" class="widget-messages-alt-avatar">
                 <a href="#" class="widget-messages-alt-subject text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
                 <div class="widget-messages-alt-description">from <a href="#">Denise Steiner</a></div>
                 <div class="widget-messages-alt-date">2h ago</div>
@@ -416,7 +416,7 @@
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            <img src="{{ url('assets/demo/avatars/1.jpg') }}" alt="" class="px-navbar-image">
+            <img src="{{ url('public/assets/demo/avatars/1.jpg') }}" alt="" class="px-navbar-image">
             <span class="hidden-md">John Doe</span>
           </a>
           <ul class="dropdown-menu">
@@ -481,8 +481,8 @@
   <!-- jQuery -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <script src="{{ url('assets/js/bootstrap.min.js') }}"></script>
-  <script src="{{ url('assets/js/pixeladmin.min.js') }}"></script>
+  <script src="{{ url('public/assets/js/bootstrap.min.js') }}"></script>
+  <script src="{{ url('public/assets/js/pixeladmin.min.js') }}"></script>
 
   <script>
     // -------------------------------------------------------------------------
